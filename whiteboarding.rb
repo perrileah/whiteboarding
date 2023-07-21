@@ -56,20 +56,30 @@
 
 #   6) Write a function that takes in an array of numbers and returns the product of all the numbers (each number multiplied by each other).
 
-array = [1, 2, 3, 4, 5]
+# array = [1, 2, 3, 4, 5]
 
 # output = 120
 
-def product(array)
+# def product(array)
+#   prod = array[0]
 
-  product = 0
+#   array.each_with_index do |number, i|
+#     puts i
+#     second_combo = array[i + 1]
 
-  array.each_with_index do |number, i|
-    array[i] * array[i + 1]
+#     if second_combo == nil
+#       break
+#     end
 
+#     prod = prod * second_combo
+#     puts prod
+#     puts "test"
+#   end
 
+#   return prod
+# end
 
-
+# p product(array)
 
 #   7) Write a function that takes in an array of numbers and returns the two smallest numbers.
 
