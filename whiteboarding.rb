@@ -99,6 +99,27 @@
 
 #   8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
 
+array = [10, 20, 30, 40, 55, 67, 98]
+
+#output: 4
+
+def return_zeros(array)
+  string = array.to_s
+
+  p string
+
+  count = 0
+
+  string.each do |value|
+    if string[index] == "0"
+      count += 1
+    end
+  end
+  return count
+end
+
+puts return_zeros(array)
+
 #   9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
 
 # array = [11, 12, 15, 17, 23]
