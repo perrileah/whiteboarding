@@ -80,3 +80,57 @@
 # end
 
 # puts greatest_value([5, 17, 4, 20, 12])
+
+#5 - Reduce: Product
+
+# Write a function that accepts an array of numbers and returns the product of all the numbers.
+
+# Input: [1, 2, 3, 4]
+# Output: 24
+
+# Explanation: (1 x 2 x 3 x 4) = 24
+
+# def find_product(array)
+#   index = 1
+#   product = 1
+
+#   while index < array.length
+#     product = product * array[index]
+#     index += 1
+#   end
+
+#   return product
+# end
+
+# puts find_product([1, 2, 3, 4])
+
+#6 - Reverse Array
+# Given an array, write a function that returns an array that contains the original array’s values in reverse.
+
+# Input: [1, 2, 3, 4, 5]
+# Output: [5, 4, 3, 2, 1]
+
+# def reverse_array(array)
+#   index = array.length - 1
+#   new_array = []
+
+#   while index >= 0
+#     new_array << array[index]
+#     index -= 1
+#   end
+
+#   return new_array
+# end
+
+# p reverse_array([1, 2, 3, 4, 5])
+
+#7 - Skip It
+# Given an array of numbers, write a function that returns a new array in which only select numbers from the original array are included, based on the following details:
+
+# The new array should always start with the first number from the original array. The next number that should be included depends on what the first number is. The first number dictates how many spaces to the right the computer should move to pick the next number. For example, if the first number is 2, then the next number that the computer should select would be two spaces to the right. This number gets added to the new array. If this next number happens to be a 4, then the next number after that is the one four spaces to the right. And so on and so forth until the end of the array is reached.
+
+# Input:
+# [2, 1, 3, 2, 5, 1, 2, 6, 2, 7, 1, 5, 6, 3, 2, 6, 2, 1, 2]
+
+# Output:
+# [2, 3, 1, 2, 2, 1, 5, 2, 2]
