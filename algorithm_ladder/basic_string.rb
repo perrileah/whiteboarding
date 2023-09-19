@@ -22,3 +22,32 @@
 
 # Input: “abcdefghijklmnopqrstuvwxyz”
 # Output: false
+
+def money(string)
+
+  string = string.delete(" ")
+  index = 0 
+
+  while index < string.length
+    if string[index] == "$"
+      return true
+    end
+    index +=1 
+  end
+
+  return false
+
+end
+
+p money("abcdefghijklmnopqrstuvwxyz")
+
+
+
+
+
+
+
+# 3: Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
+
+  # Input: “hello, how are your porcupines today?”
+  # Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
