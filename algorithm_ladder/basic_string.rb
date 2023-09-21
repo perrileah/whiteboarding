@@ -87,3 +87,30 @@
 
 
 # p duplicate("abcdefghhijkkloooop")
+
+
+# 5: Given a string, write a function that returns true if it is a palindrome, and false if it is not. (A palindrome is a word that reads the same both forward and backward.)
+
+# Input: “racecar”
+# Output: true
+
+# Input: “baloney”
+# Output: false
+
+
+# def palindrome(string)
+
+# index = 0 
+
+# while index < string.length
+#   if string[index] != string[index - 1]
+#     return false
+#   else
+#     return true
+#     index +=1
+#   end
+# end
+
+# end
+
+# p palindrome("racecar")
