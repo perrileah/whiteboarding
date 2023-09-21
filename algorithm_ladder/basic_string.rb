@@ -48,18 +48,42 @@
   # Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
 
 
-def alternate_capitals(string)
+# def alternate_capitals(string)
 
-  index = 0
-  capitalized = string[index]
+#   index = 0
+#   capitalized = string[index]
 
-  while index < string.length - 2
-    capitalized << (string[index + 1]).upcase + (string[index + 2])
-    index +=2
-  end
+#   while index < string.length - 2
+#     capitalized << (string[index + 1]).upcase + (string[index + 2])
+#     index +=2
+#   end
 
-return capitalized
-end
+# return capitalized
+# end
 
 
-p alternate_capitals("hello, how are your porcupines today?")
+# p alternate_capitals("hello, how are your porcupines today")
+
+
+# 4: Given a string, write a function that returns the first occurence of two duplicate characters in a row, and return the duplicated character.
+
+# Input: “abcdefghhijkkloooop”
+# Output: “h”
+
+# def duplicate(string)
+
+# index = 0 
+# character = ""
+
+# while index < string.length
+#   if string[index] == string[index + 1]
+#     character = string[index]
+#     return character
+#   end
+#   index += 1
+# end
+
+# end
+
+
+# p duplicate("abcdefghhijkkloooop")
