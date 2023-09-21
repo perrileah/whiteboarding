@@ -23,31 +23,43 @@
 # Input: “abcdefghijklmnopqrstuvwxyz”
 # Output: false
 
-def money(string)
+# def money(string)
 
-  string = string.delete(" ")
-  index = 0 
+#   string = string.delete(" ")
+#   index = 0 
 
-  while index < string.length
-    if string[index] == "$"
-      return true
-    end
-    index +=1 
-  end
+#   while index < string.length
+#     if string[index] == "$"
+#       return true
+#     end
+#     index +=1 
+#   end
 
-  return false
+#   return false
 
-end
+# end
 
-p money("abcdefghijklmnopqrstuvwxyz")
-
-
-
-
-
+# p money("abcdefghijklmnopqrstuvwxyz")
 
 
 # 3: Given a string, write a function that returns a copy of the original string that has every other character capitalized. (Capitalization should begin with the second character.)
 
   # Input: “hello, how are your porcupines today?”
   # Output: “hElLo, HoW ArE YoUr pOrCuPiNeS ToDaY?”
+
+
+def alternate_capitals(string)
+
+  index = 0
+  capitalized = string[index]
+
+  while index < string.length - 2
+    capitalized << (string[index + 1]).upcase + (string[index + 2])
+    index +=2
+  end
+
+return capitalized
+end
+
+
+p alternate_capitals("hello, how are your porcupines today?")
