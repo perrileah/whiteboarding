@@ -70,7 +70,7 @@
 # Input: “abcdefghhijkkloooop”
 # Output: “h”
 
-# def duplicate(string)
+# def duplicate(string) 
 
 # index = 0 
 # character = ""
@@ -104,13 +104,87 @@
 
 # while index < string.length
 #   if string[index] != string[index - 1]
+#     p string[index]
 #     return false
 #   else
-#     return true
 #     index +=1
+#     p string[index]
+#     return true
 #   end
 # end
 
 # end
 
-# p palindrome("racecar")
+# p palindrome("racecwr")
+
+
+# def palindrome(string)
+
+#   index = string.length - 1
+#   reverse_string = ""
+
+#   while index >= 0
+#       p reverse_string
+#       p index
+#       p string.length
+#       reverse_string << string[index]
+#       index -=1   
+#   end
+#     reverse_string == string   
+# end
+
+# p palindrome("taco")
+
+# 6 Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
+
+# Input: "ABCDEFG", "ABCXEOG"
+# Output: 2
+
+# Explanation: While the A, B, C, E, and G are in the same place for both strings, they have different characters in the other spaces. Since there are 2 such spaces that are different (the D and F in the first string), we return 2.
+
+# Input: "ABCDEFG", "ABCDEFG",
+# Output: 0
+
+
+# def different(string_one, string_two)
+
+#   index = 0
+#   count = 0
+
+#   while index < string_one.length # index = 0, string_one.length = 7
+#     if string_one[index] != string_two[index] # index = A
+#       count += 1
+#     end
+#     index += 1
+#   end
+# return count
+# end
+
+
+
+# p different("ABCDEFGHI", "ABCXEOGHM")
+
+
+# 7  Given a string of words, write a function that returns a new string that contains the words in reverse order.
+
+# Input: “popcorn is so cool isn’t it yeah i thought so”
+# Output: “so thought i yeah it isn’t cool so is popcorn”
+
+
+# def reverse(string)
+
+#   array = string.split(" ")
+#   new_array = []
+#   index = array.length - 1
+
+#   while index >= 0
+#     new_array << array[index]
+#     index -= 1
+#   end
+
+#   result = new_array.join(" ")
+
+#   p result 
+# end
+
+# p reverse("popcorn is so cool isn't it yeah i thought so")
