@@ -97,7 +97,7 @@
 # Input: “baloney”
 # Output: false
 
-
+# first attempt
 # def palindrome(string)
 
 # index = 0 
@@ -118,22 +118,27 @@
 # p palindrome("racecwr")
 
 
-# def palindrome(string)
+def palindrome(string)
 
-#   index = string.length - 1
-#   reverse_string = ""
+  index = string.length - 1
+  reverse_string = ""
 
-#   while index >= 0
-#       p reverse_string
-#       p index
-#       p string.length
-#       reverse_string << string[index]
-#       index -=1   
-#   end
-#     reverse_string == string   
-# end
+  while index >= 0
+      p reverse_string
+      p index
+      p string.length
+      reverse_string << string[index]
+      index -=1   
+  end
+    reverse_string == string   
+end
 
-# p palindrome("taco")
+p palindrome("racecar")
+
+
+
+
+
 
 # 6 Given two strings of equal length, write a function that returns the number of characters that are different between the two strings.
 
