@@ -24,28 +24,55 @@
 # If the number is divisible by both 3 and 5, print out "FIZZBUZZ".
 
 
-def fizz_buzz(number)
+# def fizz_buzz(number)
 
-  index = 1
+#   index = 1
 
-  while index <= number
+#   while index <= number
    
-    if (index % 3 == 0) && (index % 5 == 0)
-    puts "FIZZBUZZ"
+#     if (index % 3 == 0) && (index % 5 == 0)
+#     puts "FIZZBUZZ"
 
-    elsif index % 3 == 0 
-      puts "FIZZ"
+#     elsif index % 3 == 0 
+#       puts "FIZZ"
 
-    elsif index % 5 == 0
-      puts "BUZZ"
+#     elsif index % 5 == 0
+#       puts "BUZZ"
 
-    else
-      puts index
-    end
+#     else
+#       puts index
+#     end
 
-    index += 1
-  end
+#     index += 1
+#   end
+
+# end
+
+# p fizz_buzz(15)
+
+
+#3 Write a function that gives the Nth number of the Fibonacci Sequence. The Fibonacci sequence begins with 0 and 1, and every number thereafter is the sum of the previous two numbers. So the sequence goes like this:
+
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, and so on until infinity...
+
+# Input: 9
+# Output: 21 (as this is the 9th number of the Fibonacci Sequence)
+
+
+def fibonacci(number)
+
+index = 0
+array = [0, 1]
+
+while index <= number
+  p index
+  p array
+  array << array[index] + array[index + 1]
+  index += 1
+end
+
+return array[number - 1]
 
 end
 
-p fizz_buzz(15)
+p fibonacci(9)
