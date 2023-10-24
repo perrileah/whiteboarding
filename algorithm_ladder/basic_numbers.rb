@@ -59,20 +59,56 @@
 # Output: 21 (as this is the 9th number of the Fibonacci Sequence)
 
 
-def fibonacci(number)
+# def fibonacci(number)
 
-index = 0
-array = [0, 1]
+# index = 0
+# array = [0, 1]
 
-while index <= number
-  p index
-  p array
-  array << array[index] + array[index + 1]
-  index += 1
+# while index <= number
+#   p index
+#   p array
+#   array << array[index] + array[index + 1]
+#   index += 1
+# end
+
+# return array[number - 1]
+
+# end
+
+# p fibonacci(9)
+
+
+#4 Given a year, report if it is a leap year.
+
+# The tricky thing here is that a leap year in the Gregorian calendar occurs:
+
+# on every year that is evenly divisible by 4
+# except every year that is evenly divisible by 100
+# unless the year is also evenly divisible by 400
+
+# For example, 1997 is not a leap year, but 1996 is. 1900 is not a leap year, but 2000 is.
+
+# If your language provides a method in the standard library that does this look-up, pretend it doesn't exist and implement it yourself.
+
+
+def leap_year(number)
+
+  if number % 4 == 0
+    if number % 100 == 0 
+      if number % 400 == 0
+        puts "It's a Leap Year!"
+      elsif
+        puts "It's not a Leap Year!"
+      end
+    elsif
+      puts "It's a Leap Year!"
+    end
+
+  elsif 
+    puts "It's not a Leap Year!"
+
+  end
+
 end
 
-return array[number - 1]
-
-end
-
-p fibonacci(9)
+puts leap_year(1990)
