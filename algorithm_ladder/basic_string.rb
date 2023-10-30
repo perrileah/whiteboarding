@@ -97,26 +97,6 @@
 # Input: “baloney”
 # Output: false
 
-# first attempt
-# def palindrome(string)
-
-# index = 0 
-
-# while index < string.length
-#   if string[index] != string[index - 1]
-#     p string[index]
-#     return false
-#   else
-#     index +=1
-#     p string[index]
-#     return true
-#   end
-# end
-
-# end
-
-# p palindrome("racecwr")
-
 
 def palindrome(string)
 

@@ -159,24 +159,42 @@
 # Resulting in 9 steps. So for input n = 12, the return value would be 9.
 
 
-def collatz(number)
+# def collatz(number)
 
-  while number > 1
+#   while number > 1
 
-    if number % 2 == 0
-      number = number / 2
-      p number
+#     if number % 2 == 0
+#       number = number / 2
+#       p number
 
-    elsif 
-      number = (number * 3) + 1
-      p number
+#     elsif 
+#       number = (number * 3) + 1
+#       p number
 
-    end
+#     end
 
-  end
+#   end
 
-  return number
+#   return number
+
+# end
+
+# puts collatz(12)
+
+
+# 7 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+
+# Find the largest palindrome made from the product of two 3-digit numbers.
+
+def palindromic(number)
+
+
+
+
 
 end
 
-puts collatz(12)
+
+puts palindromic(number)
+
+
