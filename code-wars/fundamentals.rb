@@ -149,7 +149,7 @@
 # You can assume that you do get an array and if the array is empty, return 0.
 # What We're Testing
 
-# We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
+# 9 We're testing basic loops and math operations. This is for beginners who are just learning loops and math operations.
 # Advanced users may find this extremely easy and can easily write this in one line.
 
 # def sum(numbers)
@@ -172,3 +172,122 @@
 # end
 
 # p sum([-2.398])
+
+#10 Your classmates asked you to copy some paperwork for them. You know that there are 'n' classmates and the paperwork has 'm' pages.
+
+# Your task is to calculate how many blank pages do you need. If n < 0 or m < 0 return 0.
+
+#   Example:
+  
+#   n= 5, m=5: 25
+#   n=-5, m=5:  0
+
+
+# def paperwork(n, m)
+  
+#   if n < 0 || m < 0
+#     return 0
+
+#   else
+#     return n * m
+#   end
+
+# end
+
+# puts paperwork(5, -5)
+
+# 11 Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+
+# def bool_to_word bool
+  
+#   if bool == true
+#     return "Yes"
+#   elsif bool == false
+#     return "No"
+#   end
+
+# end
+
+# puts bool_to_word true
+
+
+#12 We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+# Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+# Examples
+
+# "1234" --> 1234
+# "605"  --> 605
+# "1405" --> 1405
+# "-7" --> -7
+
+
+# def string_to_number(s)
+ 
+#   return s.to_i
+
+# end
+
+# puts string_to_number("605")
+
+
+#13 Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+# [1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+
+# def grow(x) 
+  
+#   index = 0
+#   result = x[index]
+
+#   while index < x.length - 1
+#     result = result * (x[index + 1])
+#     index += 1
+#   end
+
+# return result
+# end
+
+# p grow([1, 2, 3, 4])
+
+# 14 Our football team has finished the championship.
+
+# Our team's match results are recorded in a collection of strings. Each match is represented by a string in the format "x:y", where x is our team's score and y is our opponents score.
+
+# For example: ["3:1", "2:2", "0:1", ...]
+
+# Points are awarded for each match as follows:
+
+# if x > y: 3 points (win)
+# if x < y: 0 points (loss)
+# if x = y: 1 point (tie)
+# We need to write a function that takes this collection and returns the number of points our team (x) got in the championship by the rules given above.
+
+# Notes:
+
+# our team always plays 10 matches in the championship
+# 0 <= x <= 4
+# 0 <= y <= 4
+
+
+def points(games)
+  
+  game_one = games[0]
+  game_two = games[1]
+  game_three = games[2]
+
+  x = game_one[0]
+  y = game_one[2]
+
+puts game_one
+puts game_two
+puts game_three 
+
+puts x
+puts y
+
+end
+
+puts points(["3:1", "2:2", "0:1"])
