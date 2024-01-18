@@ -272,22 +272,51 @@
 # 0 <= y <= 4
 
 
-def points(games)
+# def points(games)
   
-  game_one = games[0]
-  game_two = games[1]
-  game_three = games[2]
+#   game_one = games[0]
+#   game_two = games[1]
+#   game_three = games[2]
 
-  x = game_one[0]
-  y = game_one[2]
+#   x = game_one[0]
+#   y = game_one[2]
 
-puts game_one
-puts game_two
-puts game_three 
+# puts game_one
+# puts game_two
+# puts game_three 
 
-puts x
-puts y
+# puts x
+# puts y
 
-end
+# end
 
-puts points(["3:1", "2:2", "0:1"])
+# puts points(["3:1", "2:2", "0:1"])
+
+#15 Sentence Smash
+
+# Write a function that takes an array of words and smashes them together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+
+# def smash(words)
+
+# index = 0
+# sentence = ""
+
+# while index < words.length
+
+# sentence << words[index]
+
+# if index < words.length - 1
+#   sentence << " "
+# end
+
+# index += 1
+
+# end
+
+
+# return sentence
+# end
+
+# p smash(['hello', 'world', 'this', 'is', 'great'])
+
