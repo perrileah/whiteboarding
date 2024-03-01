@@ -186,15 +186,30 @@
 
 # Find the largest palindrome made from the product of two 3-digit numbers.
 
-def palindromic(number)
+# def palindromic(number)
 
 
 
 
 
-end
+# end
 
 
-puts palindromic(number)
+# puts palindromic(number)
 
 
+# def numbertoPower(number,power)
+
+#   index = 0
+#   result = 1
+
+#   while index < power
+#     result *= number #result = result * number
+#     index += 1
+#   end
+
+# return result
+
+# end
+
+# puts numbertoPower(3,5)
