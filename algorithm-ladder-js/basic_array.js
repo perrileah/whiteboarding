@@ -25,17 +25,58 @@
 // Input: [99, 101, 88, 4, 2000, 50]
 // Output: [99, 88, 4, 50]
 
-function select(array) {
-  let index = 0;
-  let new_array = [];
+// function select(array) {
+//   let index = 0;
+//   let new_array = [];
 
-  while (index < array.length) {
-    if (array[index] < 100) {
-      new_array.push(array[index]); // push instead of << in ruby!
+//   while (index < array.length) {
+//     if (array[index] < 100) {
+//       new_array.push(array[index]); // push instead of << in ruby!
+//     }
+//     index += 1;
+//   }
+//   return new_array;
+// }
+
+// console.log(select([99, 101, 88, 4, 2000, 50]));
+
+//3 Given an array of numbers, write a function that returns a new array whose values are the original array’s value doubled.
+// Input: [4, 2, 5, 99, -4]
+// Output: [8, 4, 10, 198, -8]
+
+// function double(array) {
+//   let new_array = [];
+//   let index = 0;
+
+//   while (index < array.length) {
+//     new_array.push(array[index] * 2);
+//     index += 1;
+//   }
+
+//   return new_array;
+// }
+
+// console.log(double([4, 2, 5, 99, -4]));
+
+//4 Array Max Write a function that returns the greatest value from an array of numbers.
+// Input: [5, 17, -4, 20, 12]
+// Output: 20
+
+function max(array) {
+  index = 0;
+  greatest_value = 0;
+
+  while (index < array.length - 1) {
+    if (array[index] > array[index + 1]) {
+      greatest_value.push(array[index]);
+    }
+    if (array[index + 1] > array[index]) {
+      greatest_value.push(array[index + 1]);
     }
     index += 1;
   }
-  return new_array;
+
+  return greatest_value;
 }
 
-console.log(select([99, 101, 88, 4, 2000, 50]));
+console.log(max([5, 17, -4, 20, 12]));
