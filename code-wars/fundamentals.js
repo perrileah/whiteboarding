@@ -103,22 +103,49 @@
 // Given [34, -345, -1, 100] your solution will return -345
 // You can assume, for the purpose of this kata, that the supplied array will not be empty.
 
-class SmallestIntegerFinder {
-  findSmallestInt(args) {
-    let index = 1;
-    let smallest_int = args[0];
+// class SmallestIntegerFinder {
+//   findSmallestInt(args) {
+//     let index = 1;
+//     let smallest_int = args[0];
 
-    while (index < args.length) {
-      if (args[index] < smallest_int) {
-        smallest_int = args[index];
-      } else {
-        index += 1;
-      }
+//     while (index < args.length) {
+//       if (args[index] < smallest_int) {
+//         smallest_int = args[index];
+//       } else {
+//         index += 1;
+//       }
+//     }
+
+//     return smallest_int;
+//   }
+// }
+
+// const finder = new SmallestIntegerFinder();
+// console.log(finder.findSmallestInt([34, 15, 88, 2])); // output: 2
+
+// Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+// For example,
+
+// [true,  true,  true,  false,
+//   true,  true,  true,  true ,
+//   true,  false, true,  false,
+//   true,  false, false, true ,
+//   true,  true,  true,  true ,
+//   false, false, true,  true]
+// The correct answer would be 17.
+
+// Hint: Don't forget to check for bad values like null/undefined
+
+function countSheeps(sheep) {
+  let count = 0;
+
+  sheep.forEach((x) => {
+    if (x === true) {
+      count += 1;
+      console.log("COUNT: ", count);
     }
+  });
 
-    return smallest_int;
-  }
+  return count;
 }
-
-const finder = new SmallestIntegerFinder();
-console.log(finder.findSmallestInt([34, 15, 88, 2])); // output: 2
