@@ -137,18 +137,18 @@
 
 // Hint: Don't forget to check for bad values like null/undefined
 
-function countSheeps(sheep) {
-  let count = 0;
+// function countSheeps(sheep) {
+//   let count = 0;
 
-  sheep.forEach((x) => {
-    if (x === true) {
-      count += 1;
-      console.log("COUNT: ", count);
-    }
-  });
+//   sheep.forEach((x) => {
+//     if (x === true) {
+//       count += 1;
+//       console.log("COUNT: ", count);
+//     }
+//   });
 
-  return count;
-}
+//   return count;
+// }
 // Can you find the needle in the haystack?
 
 // Write a function findNeedle() that takes an array full of junk but containing one "needle"
@@ -161,11 +161,56 @@ function countSheeps(sheep) {
 
 // ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5"
 
-function findNeedle(haystack) {
-  for (let i = 0; i < haystack.length; i++) {
-    if (haystack[i] == "needle") {
-      console.log(haystack[i]);
-      return `found the needle at position ${i}`;
-    }
+// function findNeedle(haystack) {
+//   for (let i = 0; i < haystack.length; i++) {
+//     if (haystack[i] == "needle") {
+//       console.log(haystack[i]);
+//       return `found the needle at position ${i}`;
+//     }
+//   }
+// }
+
+// function replace(s) {
+//   let index = 0;
+//   let result = "";
+
+//   while (index < s.length) {
+//     if (s[index] == "a" || s[index] == "A") {
+//       result += "!";
+//     } else if (s[index] == "e" || s[index] == "E") {
+//       result += "!";
+//     } else if (s[index] == "i" || s[index] == "I") {
+//       result += "!";
+//     } else if (s[index] == "o" || s[index] == "O") {
+//       result += "!";
+//     } else if (s[index] == "u" || s[index] == "U") {
+//       result += "!";
+//     } else {
+//       result += s[index];
+//     }
+//     index += 1;
+//   }
+
+//   return result;
+// }
+
+// console.log(replace("Hello"));
+
+function sumStr(a, b) {
+  if (a == "") {
+    a = "0";
   }
+  if (b === "") {
+    b = "0";
+  }
+  const a_parsed = parseInt(a);
+  const b_parsed = parseInt(b);
+
+  let added = a_parsed + b_parsed;
+
+  result = added.toString();
+
+  return result;
 }
+
+console.log(sumStr("", "4"));
